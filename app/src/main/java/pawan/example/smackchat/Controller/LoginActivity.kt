@@ -1,9 +1,10 @@
-package pawan.example.smackchat
+package pawan.example.smackchat.Controller
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import pawan.example.smackchat.R
 
 class LoginActivity : AppCompatActivity() {
 

@@ -1,10 +1,12 @@
-package pawan.example.smackchat
+package pawan.example.smackchat.Controller
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_create_user.*
+import pawan.example.smackchat.R
+import pawan.example.smackchat.Services.AuthService
 import java.util.*
 
 class CreateUserActivity : AppCompatActivity() {
@@ -48,6 +50,6 @@ class CreateUserActivity : AppCompatActivity() {
     }
 
     fun createUserClicked(view: View) {
-
+        AuthService.registerUser(this, "pawan@gmail.com", "123456") {}
     }
 }
