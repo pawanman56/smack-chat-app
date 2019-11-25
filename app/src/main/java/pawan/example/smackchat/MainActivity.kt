@@ -1,5 +1,6 @@
 package pawan.example.smackchat
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -42,8 +43,9 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    /*fun loginBtnNavClicked(view: View) {
-
+    fun loginBtnNavClicked(view: View) {
+        val loginIntent = Intent(this, LoginActivity::class.java)
+        startActivity(loginIntent)
     }
 
     fun addChannelClicked(view: View) {
@@ -52,5 +54,5 @@ class MainActivity : AppCompatActivity() {
 
     fun sendMessageBtnClicked(view: View) {
 
-    }*/
+    }
 }
